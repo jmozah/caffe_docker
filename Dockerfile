@@ -8,4 +8,4 @@ FROM tleyden5iwx/caffe
 RUN cd /opt/caffe/examples/web_demo && \
   (pip install -r requirements.txt)
 
-RUN bash -c 'echo "export PYTHONPATH=/opt/caffe/python/caffe:\$PYTHONPATH" >> ~/.bashrc'
+RUN bash -c 'echo "export PYTHONPATH=/opt/caffe/python:\$PYTHONPATH" >> ~/.bashrc'
